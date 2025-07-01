@@ -1,0 +1,5 @@
+data=list(range(1,21))
+print("first 5:",data[:5])
+print("last 5:",data[-5:])
+print("avrey 3rd:",data[::3])
+print("revarsed list",data[::-1])
