@@ -50,7 +50,7 @@ def update_status():
     found = False
     for task in tasks:
         if task["id"] == user_input or task["name"] == user_input:
-            new_status = input("Enter new status (New/Completed): ").capitalize()
+            new_status = input("Enter new status (New/Completed): ")
             task["status"] = new_status
             print("Status updated.\n")
             found = True
@@ -67,8 +67,8 @@ def list_tasks():
         print()
 
 def filter_tasks():
-    status_filter = input("Filter by Status (New/Completed/All): ").capitalize()
-    tag_filter = input("Filter by Tag (High/Low/All): ").capitalize()
+    status_filter = input("Filter by Status (New/Completed/All): ")
+    tag_filter = input("Filter by Tag (High/Low/All): ")
 
     filtered = False
     for task in tasks:
