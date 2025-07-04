@@ -8,8 +8,8 @@ def generate_id():
 def add_task():
     name = input("Enter task name: ")
     description = input("Enter task description: ")
-    status = input("Enter status (New/Completed): ").capitalize()
-    tag = input("Enter tag (High/Low): ").capitalize()
+    status = input("Enter status (New/Completed): ")
+    tag = input("Enter tag (High/Low): ")
 
     task = {
         "id": generate_id(),
